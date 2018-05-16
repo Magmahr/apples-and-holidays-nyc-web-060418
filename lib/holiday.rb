@@ -55,23 +55,15 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |holiday, supplies|
       if holiday == :new_years
         puts "  New Years: #{supplies.join(", ")}"
-      elsif if holiday == :fourth_of_july
+      elsif holiday == :fourth_of_july
         puts "  Fourth of July: #{supplies.join(", ")}"
-      elsif if holiday == :memorial_day
+      elsif holiday == :memorial_day
         puts "  Memorial Day: #{supplies.join(", ")}"
       else  
         puts "  #{holiday.to_s.capitalize!}: #{supplies.join(", ")}"
       end
     end
   end    
-  # iterate through holiday_hash and print items such that your readout resembles:
-  # Winter:
-  #   Christmas: Lights, Wreath
-  #   New Years: Party Hats
-  # Summer:
-  #   Fourth Of July: Fireworks, BBQ
-  # etc.
-
 end
 
 def all_holidays_with_bbq(holiday_hash)
