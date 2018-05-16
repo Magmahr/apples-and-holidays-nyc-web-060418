@@ -53,7 +53,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     puts "#{season.to_s.capitalize!}:"
     holiday.each do |holiday, supplies|
-      if season == :new_years
+      if holiday == :new_years
         puts "New Years:"
       else 
       puts "  #{holiday.to_s.capitalize!}: #{supplies.join(", ")}"
